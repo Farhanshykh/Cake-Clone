@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cake | Template</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Assets/css/barfiller.css.css">
+    <link rel="stylesheet" href="Assets/css/slick.css">
+    <link rel="stylesheet" href="Assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="Assets/css/nice-select.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" 
+    integrity="sha512-6f7HT84a/AplPkpSRSKWqbseRTG4aRrhadjZezYQ0oVk/B+nm/US5KzQkyyOyh0Mn9cyDdChRdS9qaxJRHayww==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/elegant-icons@0.0.1-alpha.4/elegant-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <ul>
+                <li>USD 
+                    <span></span>
+                    <ul>
+                        <li>EUR</li>
+                        <li>USD</li>
+                    </ul>
+                </li>
+                <li>ENG 
+                    <span></span>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>ENG</li>
+                    </ul>
+                </li>
+                <li>Sign in </li>
+            </ul>
+            <div class="logo">
+                <img src="Assets/logo.png.webp" alt="">
+            </div>
+            <div class="icons">
+                <img src="Assets/search.png.webp" alt="" class="search">
+                <span></span>
+                <img src="Assets/heart.png.webp" alt="">
+                <img src="Assets/cart.png.webp" alt="">
+                <p class="cart-text">0</p>
+                <p><span>Cart: </span>$0.00</p>
+            </div>
+            <div class="sidebar-open" onclick="showSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">pages</a>
+                    <ul class="dropdown" data-aos="fade-up">
+                        <li>shop details</li>
+                        <li>shopping cart</li>
+                        <li>check out</li>
+                        <li>wishlist</li>
+                        <li>class</li>
+                        <li>blog details</li>
+                    </ul>
+                </li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <div class="header">
+            <div class="hide-sidebar" onclick="hideSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            <div class="header-top">
+                <ul>
+                    <li>USD 
+                        <span></span>
+                        <ul>
+                            <li>EUR</li>
+                            <li>USD</li>
+                        </ul>
+                    </li>
+                    <li>ENG 
+                        <span></span>
+                        <ul>
+                            <li>Spanish</li>
+                            <li>ENG</li>
+                        </ul>
+                    </li>
+                    <li>Sign in </li>
+                </ul>
+                <div class="logo">
+                    <img src="Assets/logo.png.webp" alt="">
+                </div>
+                <div class="icons icons-main">
+                    <img src="Assets/search.png.webp" alt="" class="search">
+                    <span></span>
+                    <img src="Assets/heart.png.webp" alt="">
+                    <img src="Assets/cart.png.webp" alt="">
+                    <p class="cart-text">0</p>
+                    <p><span>Cart: </span>$0.00</p>
+                </div>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">pages</a>
+                        <ul class="dropdown" data-aos="fade-up">
+                            <li>shop details</li>
+                            <li>shopping cart</li>
+                            <li>check out</li>
+                            <li>wishlist</li>
+                            <li>class</li>
+                            <li>blog details</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="slider">
+            <div class="item">
+                <h1>Making your life sweeter <br>one bite at a time!</h1>
+                <button>Our cakes</button>
+            </div>
+                <div class="item">
+                    <h1>Making your life sweeter <br>one bite at a time!</h1>
+                    <button>Our cakes</button>
+                </div>
+                    <div class="item">
+                        <h1>Making your life sweeter <br>one bite at a time!</h1>
+                        <button>Our cakes</button>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="left">
+            <p class="heading">about cake shop</p><br>
+            <h1>Cakes and bakes from the <br>house of Queens!</h1><br>
+            <p>The "Cake Shop" is a Jordanian Brand that started as a small family <br> business. The owners are Dr. Iyad Sultan and Dr. Sereen Sharabati,<br> supported by a staff of 80 employees.</p>
+        </div>
+        <div class="right">
+            <p>CAKE DESIGN</p>
+            <div id="bar" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="95"></span>
+            </div><br>
+            <p>CAKE CLASS</p>
+            <div id="bar1" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="80"></span>
+            </div><br>
+            <p>CAKE RECIPES</p>
+            <div id="bar2" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="90"></span>
+            </div>
+        </div>
+    </div>
+    <div class="hover-items">
+        <div class="circle">
+            <img src="Assets/cupcake.png" alt="">
+            <p>cupcake</p>
+        </div>
+        <div class="circle">
+            <img src="Assets/butter.png" alt="">
+            <p>butter</p>
+        </div>
+        <div class="circle">
+            <img src="Assets/red velvet.png" alt="">
+            <p>red velvet</p>
+        </div>
+        <div class="circle">
+            <img src="Assets/biscuit.png" alt="">
+            <p>biscuit</p>
+        </div>
+        <div class="circle">
+            <img src="Assets/donut.png" alt="">
+            <p>donut</p>
+        </div>
+        <div class="circle">
+            <img src="Assets/pancake.png.png" alt="">
+            <p>pancake</p>
+        </div>
+    </div>
+    <div class="items">
+        <div class="row">
+            <div class="pic">
+            <img src="Assets/item-1.webp" alt="">
+            <div class="overlay">cupcake</div>
+            <h2>dozen cupcakes</h2>
+            <p class="hide-on-hover">$32.00</p>
+            <p class="hover-text">Add to cart</p>
+        </div>
+        <div class="pic">
+            <img src="Assets/product-2.jpg.webp" alt="">
+            <div class="overlay">cupcake</div>
+            <h2>cookies and cream</h2>
+            <p class="hide-on-hover">$30.00</p>
+            <p class="hover-text">Add to cart</p>
+        </div>
+        <div class="pic">
+            <img src="Assets/product-3.jpg.webp" alt="">
+            <div class="overlay">cupcake</div>
+            <h2>gluten free mini dozen</h2>
+            <p class="hide-on-hover">$31.00</p>
+            <p class="hover-text">Add to cart</p>
+        </div>
+        <div class="pic">
+            <img src="Assets/product-4.jpg.webp" alt="">
+            <div class="overlay">cupcake</div>
+            <h2>cookie dough</h2>
+            <p class="hide-on-hover">$25.00</p>
+            <p class="hover-text">Add to cart</p>
+        </div>
+        </div><br>
+        <div class="row-2">
+            <div class="pic">
+            <img src="Assets/item-1.webp" alt="">
+            <div class="overlay">cupcake</div>
+            <h2>vanilla salted caramel</h2>
+            <p class="hide-on-hover">$05.00</p>
+            <p class="hover-text">Add to cart</p>
+        </div>
+        <div class="pic">
+            <img src="Assets/product-2.jpg.webp" alt="">
+            <div class="overlay">cupcake</div>
+            <h2>german chocolate</h2>
+            <p class="hide-on-hover">$14.00</p>
+            <p class="hover-text">Add to cart</p>
+        </div>
+        <div class="pic">
+            <img src="Assets/product-3.jpg.webp" alt="">
+            <div class="overlay">cupcake</div>
+            <h2>dulce de leche</h2>
+            <p class="hide-on-hover">$32.00</p>
+            <p class="hover-text">Add to cart</p>
+        </div>
+        <div class="pic">
+            <img src="Assets/product-4.jpg.webp" alt="">
+            <div class="overlay">cupcake</div>
+            <h2>mississippi mud</h2>
+            <p class="hide-on-hover">$08.00</p>
+            <p class="hover-text">Add to cart</p>
+        </div>
+        </div>
+    </div>
+    <div class="class-cakes">
+        <div class="left-class">
+            <p>class cakes</p>
+            <h2>Made from your <br>own hands</h2><br>
+            <div class="registration">
+                <form action="">
+                    <input type="text" placeholder="Name"><br>
+                    <input type="tel" name="" id="" placeholder="Phone"><br>
+                    <select name="" id="" aria-placeholder="Studying Class">
+                        <option value="1" data-display="Studying Class">Studying Class</option>
+                        <option value="2">Writting Class</option>
+                        <option value="3">Reading Class</option>
+                    </select><br><br>
+                    <input type="text" name="" id="" placeholder="Type your requirements"><br>
+                    <button>registration</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-class">
+            <div class="play-button">
+                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="our-team">
+        <div class="team-heading">
+            <div class="team-pic">
+                <p>our team</p>
+                <h3>sweet baker</h3>
+            </div>
+            <button>join us</button>
+        </div>
+        <div class="bakers">
+            <img src="Assets/team-1.jpg" alt="">
+            <img src="Assets/team-2.jpg" alt="">
+            <img src="Assets/team-3.jpg" alt="">
+            <img src="Assets/team-4.jpg" alt="">
+        </div>
+    </div>
+    <div class="testimonial">
+        <p>testimonial</p>
+        <h3>Our client say</h3>
+        <div class="testimonial-boxes">
+            <div class="testimonial-box-1">
+                <div class="box1-line-1">
+                    <img src="Assets/ta-1.jpg.webp" alt="">
+                    <div class="clients-name">
+                        <h3>kerry d.silva</h3>
+                        <p>New york</p>
+                    </div>
+                    <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #f08632;"></i>
+                    <i class="fa-solid fa-star" style="color: #f08632;"></i>
+                    <i class="fa-solid fa-star" style="color: #f08632;"></i>
+                    <i class="fa-solid fa-star" style="color: #f08632;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color: #f08632;"></i>
+                </div>
+                </div>
+                <div class="box1-line-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua viverra lacus vel facilisis.</p>
+                </div>
+            </div>
+            <div class="testimonial-box-2">
+                <div class="box1-line-1">
+                    <img src="Assets/ta-2.jpg.webp" alt="">
+                    <div class="clients-name">
+                        <h3>kerry d.silva</h3>
+                        <p>New york</p>
+                    </div>
+                    <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #f08632;"></i>
+                    <i class="fa-solid fa-star" style="color: #f08632;"></i>
+                    <i class="fa-solid fa-star" style="color: #f08632;"></i>
+                    <i class="fa-solid fa-star" style="color: #f08632;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color: #f08632;"></i>
+                </div>
+                </div>
+                <div class="box1-line-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua viverra lacus vel facilisis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="follow-text">
+        <p>follow us on instagram</p>
+        <h3>Sweet moments <br> are saved as <br>memories.</h3>
+        <div class="cake-piece">
+        <img src="Assets/cake-piece.png.webp" alt="">
+        <div class="insta">
+            <i class="fa-brands fa-instagram"></i>
+            <p>@sweetcake</p>
+        </div>
+    </div>
+    </div>
+    <div class="follow-pics">
+        <div class="pics-container pics-conainer-1">
+            <img src="Assets/instagram-1.jpg.webp" alt="">
+            <img src="Assets/instagram-4.jpg.webp" alt="">
+        </div>
+        <div class="pics-container pics-container-2">
+            <img src="Assets/instagram-2.jpg.webp" alt="">
+            <img src="Assets/instagram-5.jpg.webp" alt="">
+        </div>
+        <div class="pics-container">
+            <img src="Assets/instagram-3.jpg.webp" alt="">
+            <img src="Assets/instagram-3.jpg.webp" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6168.380385322891!2d-104.86759231203092!3d39.3745716228796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c99427a67dcd3%3A0x19e0203612fa2019!2sThe%20Cake%20Company!5e0!3m2!1sen!2s!4v1725122654400!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-address">
+        <p class="city">colorado</p>
+        <p>1000 lake point Dr, Frisco, CO 80443, USA</p>
+        <p>Sweetcake@support.com</p>
+        <p>+1 800-786-1000</p>
+    </div>
+    </div>
+    <footer>
+        <div class="quick-links-portion">
+        <div class="quick-links quick-links-1">
+            <h3>working hours</h3>
+            <p>Monday - Friday: 08:00 am – 08:30 pm</p>
+            <p>Saturday: 10:00 am – 16:30 pm</p>
+            <p>Sunday: 10:00 am – 16:30 pm</p>
+        </div>
+        <div class="quick-links quick-links-2">
+            <img src="Assets/footer-logo.png.webp" alt="">
+            <p>Lorem ipsum dolor amet, consectetur adipiscing <br> elit, sed do eiusmod tempor incididunt ut labore <br> dolore magna aliqua.</p>
+        </div>
+        <div class="quick-links quick-links-3">
+            <h3>subscribe</h3>
+            <p>Get latest updates and offers.</p>
+            <div class="inp-icon">
+            <input type="email" name="" id="" placeholder="Email">
+            <span></span>
+        </div>
+        </div>
+    </div>
+    <div class="social-icons">
+        <div class="inner-icons">
+            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+        </div>
+        <div class="inner-icons">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        </div>
+        <div class="inner-icons">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        </div>
+        <div class="inner-icons">
+            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    </footer>
+    <div class="copyright">
+        <div class="copyright-text">
+            <p>Copyright &copy;2024 All Rightsreserved | This template is made with 
+                <i class="fa-solid fa-heart" style="color: #f08632;"></i> &nbsp; by <span>Farhan</span>
+            </p>
+        </div>
+        <div class="privacy">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+                <li class="third">Sit Map</li>
+            </ul>
+        </div>
+    </div>
+    <script src="Assets/js/jquery.barfiller.js"></script>
+    <script src="Assets/js/slick.min.js"></script>
+    <script src="Assets/js/jquery.slicknav.min.js"></script>
+    <script src="Assets/js/jquery.nice-select.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+	$(function(){
+		$('#menu').slicknav({
+            prependTo: '.sidebar'
+        });
+	});
+
+    $(document).ready(function() {
+        $('select').niceSelect();
+    });
+
+    AOS.init();
+
+    $(document).ready(function(){
+  $('.slider').slick({
+    rtl: true,
+  });
+});
+
+$('.slider').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    
+});
+
+$(document).ready(function(){
+    $('#bar').barfiller({
+        barColor: "#000000"
+    });
+    $('#bar1').barfiller({
+        barColor: "#000000"
+    });
+    $('#bar2').barfiller({
+        barColor: "#000000"
+    });
+});
+
+    function showSideBar () {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "block";
+    }
+
+    function hideSideBar () {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none"
+    }
+    </script>
+</body>
+</html>
