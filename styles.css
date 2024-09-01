@@ -1066,7 +1066,7 @@ footer {
         margin-bottom: 50px;
     }
     .hero .slider {
-        height: 310px;
+        height: 350px;
         width: 80%;
     }
     .hero .slider .item h1 {
@@ -1106,7 +1106,7 @@ footer {
         width: 50%;
     }
     .circle img {
-        left: 90px;
+        left: 50px;
     }
     .items {
         height: fit-content;
@@ -1143,8 +1143,14 @@ footer {
         flex-direction: column;
         gap: 30px;
     }
+    .left-class {
+        width: 100%;
+    }
     .left-class form input {
-        width: 350px;
+        width: 300px;
+    }
+    .left-class form select {
+        width: 300px !important;
     }
     .testimonial {
         width: 100%;
@@ -1168,7 +1174,7 @@ footer {
         margin-right: 8px;
     }
     .follow {
-        margin-top: 550px;
+        margin-top: 700px;
         width: 100%;
         flex-direction: column;
         gap: 80px;
